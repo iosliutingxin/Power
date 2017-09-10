@@ -8,17 +8,26 @@
 
 #import "ViewController.h"
 @interface ViewController ()
+{
 
+    NSArray *dataSource;
+
+}
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self initDataSource];
     [self initUITableView];
 }
 
+-(void)initDataSource{
+
+
+    dataSource = @[@"json",@"xml"];
+}
 
 -(void)initUITableView{
     
@@ -42,7 +51,7 @@
         cell =[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
     
-    cell.textLabel.text=@"hello world";
+    cell.textLabel.text=dataSource[indexPath.row];
     
 
     
@@ -52,7 +61,7 @@
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 
-    return 2;
+    return dataSource.count;
 }
 
 #pragma mark - UITabelViewDataSource
@@ -71,7 +80,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    xmlViewController * xm = [[xmlViewController alloc]init];
+     jsonViewController* xm = [[jsonViewController alloc]init];
     [self.navigationController pushViewController:xm animated:nil];
     
     

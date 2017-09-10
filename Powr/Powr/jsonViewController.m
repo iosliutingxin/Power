@@ -16,22 +16,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self serializationJSon];
+}
+
+-(void)serializationJSon{
+    
+    NSURL *url = [NSURL URLWithString:@"http://123.56.134.198:8082/api.php?app=brand"];
+    
+    NSURLRequest * request = [NSURLRequest requestWithURL:url];
+    
+    //3,建立网路连接
+    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {
+        NSLog(@"%@",data);
+        //将二进制转化为字符串
+        id result =[NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
+        NSLog(@"==>%@",result);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

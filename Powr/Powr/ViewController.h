@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "xmlViewController.h"
+#import "jsonViewController.h"
 @interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
-
 
 @end
 
