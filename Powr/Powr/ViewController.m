@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-
 @interface ViewController ()
 
 @end
@@ -23,10 +22,10 @@
 
 -(void)initUITableView{
     
-    UITableView *table =[[UITableView alloc]initWithFrame:CGRectMake(0, 110, self.view.frame.size.width, self.view.frame.size.height)];
+    UITableView *table =[[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     table.delegate  =self;
     table.dataSource=self;
-    table.backgroundColor = [UIColor  blackColor];
+    table.backgroundColor = [UIColor  whiteColor];
     [self.view addSubview:table];
     
 
@@ -71,12 +70,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-//    if (indexPath.row!=0) {
-//        
-//        NSString *row=[NSString stringWithFormat:@"%ld",(long)indexPath.row];
-//        [self performSegueWithIdentifier:@"productSearch" sender:row];
-//        
-//    }
+    
+    xmlViewController * xm = [[xmlViewController alloc]init];
+    [self.navigationController pushViewController:xm animated:nil];
+    
+    
     
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section

@@ -15,6 +15,8 @@
 		C9764A4C1F5C589C00C5B386 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9764A4A1F5C589C00C5B386 /* LaunchScreen.storyboard */; };
 		C9764A571F5C589C00C5B386 /* PowrTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9764A561F5C589C00C5B386 /* PowrTests.m */; };
 		C9764A621F5C589C00C5B386 /* PowrUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9764A611F5C589C00C5B386 /* PowrUITests.m */; };
+		C97A6D2A1F63ED8300ECE8A2 /* jsonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C97A6D291F63ED8300ECE8A2 /* jsonViewController.m */; };
+		C97A6D2D1F63EDB000ECE8A2 /* xmlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C97A6D2C1F63EDB000ECE8A2 /* xmlViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		C9764A5D1F5C589C00C5B386 /* PowrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PowrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9764A611F5C589C00C5B386 /* PowrUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PowrUITests.m; sourceTree = "<group>"; };
 		C9764A631F5C589C00C5B386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C97A6D281F63ED8300ECE8A2 /* jsonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jsonViewController.h; sourceTree = "<group>"; };
+		C97A6D291F63ED8300ECE8A2 /* jsonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jsonViewController.m; sourceTree = "<group>"; };
+		C97A6D2B1F63EDB000ECE8A2 /* xmlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xmlViewController.h; sourceTree = "<group>"; };
+		C97A6D2C1F63EDB000ECE8A2 /* xmlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xmlViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		C9764A3B1F5C589B00C5B386 /* Powr */ = {
 			isa = PBXGroup;
 			children = (
+				C97A6D211F63CFEE00ECE8A2 /* XML */,
 				C9764A3F1F5C589B00C5B386 /* AppDelegate.h */,
 				C9764A401F5C589B00C5B386 /* AppDelegate.m */,
 				C9764A421F5C589B00C5B386 /* ViewController.h */,
@@ -138,6 +145,17 @@
 				C9764A631F5C589C00C5B386 /* Info.plist */,
 			);
 			path = PowrUITests;
+			sourceTree = "<group>";
+		};
+		C97A6D211F63CFEE00ECE8A2 /* XML */ = {
+			isa = PBXGroup;
+			children = (
+				C97A6D281F63ED8300ECE8A2 /* jsonViewController.h */,
+				C97A6D291F63ED8300ECE8A2 /* jsonViewController.m */,
+				C97A6D2B1F63EDB000ECE8A2 /* xmlViewController.h */,
+				C97A6D2C1F63EDB000ECE8A2 /* xmlViewController.m */,
+			);
+			name = XML;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,7 +289,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C97A6D2A1F63ED8300ECE8A2 /* jsonViewController.m in Sources */,
 				C9764A441F5C589B00C5B386 /* ViewController.m in Sources */,
+				C97A6D2D1F63EDB000ECE8A2 /* xmlViewController.m in Sources */,
 				C9764A411F5C589B00C5B386 /* AppDelegate.m in Sources */,
 				C9764A3E1F5C589B00C5B386 /* main.m in Sources */,
 			);
@@ -499,6 +519,7 @@
 				C9764A681F5C589C00C5B386 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9764A691F5C589C00C5B386 /* Build configuration list for PBXNativeTarget "PowrTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +528,7 @@
 				C9764A6B1F5C589C00C5B386 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9764A6C1F5C589C00C5B386 /* Build configuration list for PBXNativeTarget "PowrUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +537,7 @@
 				C9764A6E1F5C589C00C5B386 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
