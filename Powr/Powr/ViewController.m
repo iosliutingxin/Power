@@ -80,8 +80,11 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-     jsonViewController* xm = [[jsonViewController alloc]init];
-    [self.navigationController pushViewController:xm animated:nil];
+//     jsonViewController* xm = [[jsonViewController alloc]init];
+//    [self.navigationController pushViewController:xm animated:nil];
+    
+    xmlViewController *xml = [[xmlViewController alloc]init];
+    [self.navigationController pushViewController:xml animated:YES];
     
     
     

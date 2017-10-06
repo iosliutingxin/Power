@@ -17,6 +17,7 @@
 		C9764A621F5C589C00C5B386 /* PowrUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9764A611F5C589C00C5B386 /* PowrUITests.m */; };
 		C97A6D2A1F63ED8300ECE8A2 /* jsonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C97A6D291F63ED8300ECE8A2 /* jsonViewController.m */; };
 		C97A6D2D1F63EDB000ECE8A2 /* xmlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C97A6D2C1F63EDB000ECE8A2 /* xmlViewController.m */; };
+		C9D225A11F876FC700BEA7B9 /* loginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D225A01F876FC700BEA7B9 /* loginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		C97A6D291F63ED8300ECE8A2 /* jsonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jsonViewController.m; sourceTree = "<group>"; };
 		C97A6D2B1F63EDB000ECE8A2 /* xmlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xmlViewController.h; sourceTree = "<group>"; };
 		C97A6D2C1F63EDB000ECE8A2 /* xmlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xmlViewController.m; sourceTree = "<group>"; };
+		C9D2259F1F876FC700BEA7B9 /* loginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loginViewController.h; sourceTree = "<group>"; };
+		C9D225A01F876FC700BEA7B9 /* loginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,7 @@
 		C9764A3B1F5C589B00C5B386 /* Powr */ = {
 			isa = PBXGroup;
 			children = (
+				C9D2259E1F876F8900BEA7B9 /* password */,
 				C97A6D211F63CFEE00ECE8A2 /* XML */,
 				C9764A3F1F5C589B00C5B386 /* AppDelegate.h */,
 				C9764A401F5C589B00C5B386 /* AppDelegate.m */,
@@ -156,6 +160,15 @@
 				C97A6D2C1F63EDB000ECE8A2 /* xmlViewController.m */,
 			);
 			name = XML;
+			sourceTree = "<group>";
+		};
+		C9D2259E1F876F8900BEA7B9 /* password */ = {
+			isa = PBXGroup;
+			children = (
+				C9D2259F1F876FC700BEA7B9 /* loginViewController.h */,
+				C9D225A01F876FC700BEA7B9 /* loginViewController.m */,
+			);
+			name = password;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +306,7 @@
 				C9764A441F5C589B00C5B386 /* ViewController.m in Sources */,
 				C97A6D2D1F63EDB000ECE8A2 /* xmlViewController.m in Sources */,
 				C9764A411F5C589B00C5B386 /* AppDelegate.m in Sources */,
+				C9D225A11F876FC700BEA7B9 /* loginViewController.m in Sources */,
 				C9764A3E1F5C589B00C5B386 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
