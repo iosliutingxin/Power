@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface loginViewController : UIViewController
-
+{
+    UITextField *password;
+    UITextField *username;
+}
 @end

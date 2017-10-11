@@ -14,24 +14,46 @@
 
 @implementation loginViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self createView];
+}
+
+-(void)createView{
+    
+    //账号
+    self->username = [[UITextField alloc]initWithFrame:CGRectMake(10, 100, self.view.frame.size.width-20, 50)];
+    self->username.backgroundColor=[UIColor whiteColor];
+    self->username.placeholder=@"账户";
+    [self.view addSubview:self->username];
+    
+    //密码
+    self->password = [[UITextField alloc]initWithFrame:CGRectMake(10, 160, self.view.frame.size.width-20, 50)];
+    self->password.backgroundColor=[UIColor whiteColor];
+    self->password.placeholder=@"密码";
+    [self.view addSubview:self->password];
+    
+    //登陆按钮
+    UIButton *login =[[UIButton alloc]initWithFrame:CGRectMake(10, 220, self.view.frame.size.width-20, 50)];
+    login.backgroundColor=[UIColor whiteColor];
+    [login setTitle:@"login" forState:UIControlStateNormal];
+    [login setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [login addTarget:self action:@selector(loginFocusWithUserName:passWord:) forControlEvents:UIControlEventTouchDown];
+    [self.view addSubview:login];
+    
+
+
+}
+-(void)loginFocusWithUserName:(NSString *)username passWord:(NSString *)password{
+    
+    NSString *name = self->username.text;
+    NSString *pwd  = self->password.text;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

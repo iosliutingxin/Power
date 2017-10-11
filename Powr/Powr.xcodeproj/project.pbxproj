@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C928C65E1F8E6631006A9D07 /* URLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C928C65D1F8E6631006A9D07 /* URLSessionViewController.m */; };
 		C9764A3E1F5C589B00C5B386 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9764A3D1F5C589B00C5B386 /* main.m */; };
 		C9764A411F5C589B00C5B386 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9764A401F5C589B00C5B386 /* AppDelegate.m */; };
 		C9764A441F5C589B00C5B386 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9764A431F5C589B00C5B386 /* ViewController.m */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C928C65C1F8E6631006A9D07 /* URLSessionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLSessionViewController.h; sourceTree = "<group>"; };
+		C928C65D1F8E6631006A9D07 /* URLSessionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLSessionViewController.m; sourceTree = "<group>"; };
 		C9764A391F5C589B00C5B386 /* Powr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Powr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9764A3D1F5C589B00C5B386 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C9764A3F1F5C589B00C5B386 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -87,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C928C65B1F8E65F5006A9D07 /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				C928C65C1F8E6631006A9D07 /* URLSessionViewController.h */,
+				C928C65D1F8E6631006A9D07 /* URLSessionViewController.m */,
+			);
+			name = NSURLSession;
+			sourceTree = "<group>";
+		};
 		C9764A301F5C589B00C5B386 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +122,7 @@
 		C9764A3B1F5C589B00C5B386 /* Powr */ = {
 			isa = PBXGroup;
 			children = (
+				C928C65B1F8E65F5006A9D07 /* NSURLSession */,
 				C9D2259E1F876F8900BEA7B9 /* password */,
 				C97A6D211F63CFEE00ECE8A2 /* XML */,
 				C9764A3F1F5C589B00C5B386 /* AppDelegate.h */,
@@ -302,6 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C928C65E1F8E6631006A9D07 /* URLSessionViewController.m in Sources */,
 				C97A6D2A1F63ED8300ECE8A2 /* jsonViewController.m in Sources */,
 				C9764A441F5C589B00C5B386 /* ViewController.m in Sources */,
 				C97A6D2D1F63EDB000ECE8A2 /* xmlViewController.m in Sources */,

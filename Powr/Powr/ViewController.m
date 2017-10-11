@@ -26,7 +26,7 @@
 -(void)initDataSource{
 
 
-    dataSource = @[@"json",@"xml"];
+    dataSource = @[@"json",@"xml",@"login",@"URLSession"];
 }
 
 -(void)initUITableView{
@@ -82,10 +82,25 @@
     
 //     jsonViewController* xm = [[jsonViewController alloc]init];
 //    [self.navigationController pushViewController:xm animated:nil];
+    if (indexPath.row==0) {
+        xmlViewController *xml = [[xmlViewController alloc]init];
+        [self.navigationController pushViewController:xml animated:nil];
     
-    xmlViewController *xml = [[xmlViewController alloc]init];
-    [self.navigationController pushViewController:xml animated:YES];
+    }else if (indexPath.row==2){
     
+        loginViewController *xml = [[loginViewController alloc]init];
+        [self.navigationController pushViewController:xml animated:nil];
+        
+
+    
+    }else if (indexPath.row==3){
+        
+        URLSessionViewController *xml = [[URLSessionViewController alloc]init];
+        [self.navigationController pushViewController:xml animated:nil];
+        
+
+    
+    }
     
     
 }

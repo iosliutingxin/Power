@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "xmlViewController.h"
 #import "jsonViewController.h"
+#import "loginViewController.h"
+#import "URLSessionViewController.h"
 @interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 
 @end
