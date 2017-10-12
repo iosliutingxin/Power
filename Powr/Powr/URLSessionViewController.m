@@ -8,11 +8,24 @@
 
 #import "URLSessionViewController.h"
 
-@interface URLSessionViewController ()
-
+@interface URLSessionViewController ()<NSURLSessionDownloadDelegate>
+@property(nonatomic,strong)NSURLSession *session;
 @end
 
 @implementation URLSessionViewController
+
+-(NSURLSession *)session{
+    
+    if (_session==nil) {
+        
+        NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
+        _session = [NSURLSession sessionWithConfiguration:config delegate:self delegateQueue:nil];
+        
+    }
+    
+    return _session;
+
+}
 
 - (void)viewDidLoad {
     self.view.backgroundColor = [UIColor whiteColor];
@@ -26,10 +39,47 @@
     
     NSURL *url=[NSURL URLWithString:@"http://117.41.172.5:81/epson/epsonbook/cb-1460ui-7.mp4"];
     
-    [[[NSURLSession sharedSession]downloadTaskWithURL:url completionHandler:^(NSURL * _Nullable location, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        
-        NSLog(@"%@",location);
-    }]resume];
+//1、全局的session
+//    [[[NSURLSession sharedSession]downloadTaskWithURL:url completionHandler:^(NSURL * _Nullable location, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+//        
+//        NSLog(@"%@",location);
+//    }]resume];
+    
+//2、自己定义的session
+//如果要跟进下载进度，不能使用block回调的方式
+    [[self.session downloadTaskWithURL:url] resume];
+    
+    
+}
+
+#pragma mark NSURLSessionDownloadDelegate
+
+//1.下载完成
+-(void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask didFinishDownloadingToURL:(NSURL *)location{
+    NSLog(@"sucess==%@",location);
+
+}
+
+//2.下载进度
+/**
+ 1.session
+ 2.downloadTask               调用代理方式的下载任务
+ 3.bytesWritten               本次下载的字节数
+ 4.totalBytesWritten          已经下载的字节数
+ 5.totalBytesExpectedToWrite  期望下载的我子节数---文件大小
+ 
+ */
+
+-(void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask didWriteData:(int64_t)bytesWritten totalBytesWritten:(int64_t)totalBytesWritten totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite{
+    
+    
+    float progress =(float)totalBytesWritten / totalBytesExpectedToWrite;
+    NSLog(@"%f",progress);
+}
+
+//3、下载续传数据
+-(void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask didResumeAtOffset:(int64_t)fileOffset expectedTotalBytes:(int64_t)expectedTotalBytes{
+
 }
 
 
