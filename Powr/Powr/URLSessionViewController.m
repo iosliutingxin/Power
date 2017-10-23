@@ -10,6 +10,9 @@
 
 @interface URLSessionViewController ()<NSURLSessionDownloadDelegate>
 @property(nonatomic,strong)NSURLSession *session;
+//全局的下载队列
+@property(nonatomic,strong)NSURLSessionDownloadTask *downlodTase;
+@property(nonatomic,strong)NSData * resumData;
 @end
 
 @implementation URLSessionViewController
@@ -68,20 +71,60 @@
 // 开始
 -(void)startValue:(UIButton *)object{
     
-    NSLog(@"start");
+//1， 任务放到异步中执行
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        NSLog(@"把下载任务放到异步去执行");
+        
+        NSURL *url=[NSURL URLWithString:@"http://117.41.172.5:81/epson/epsonbook/cb-1460ui-7.mp4"];
+        //    [[self.session downloadTaskWithURL:url] resume];
+        self.downlodTase= [self.session downloadTaskWithURL:url];
+        [self.downlodTase resume];
+        
+        NSLog(@"start");
+
+    });
+    
+//2，任务在主线程中执行
+//    NSURL *url=[NSURL URLWithString:@"http://117.41.172.5:81/epson/epsonbook/cb-1460ui-7.mp4"];
+//    //    [[self.session downloadTaskWithURL:url] resume];
+//    self.downlodTase= [self.session downloadTaskWithURL:url];
+//    [self.downlodTase resume];
+//    
+//    NSLog(@"start");
 }
 
 //暂停
 -(void)StopValue:(UIButton *)object{
 
     NSLog(@"stop");
+//resumeData续传数据（下载了多少）
+    [self.downlodTase cancelByProducingResumeData:^(NSData * _Nullable resumeData) {
+        NSLog(@"数据的长度：%tu",resumeData.length);
+//释放下载数据（释放掉任务）
+        
+        self.downlodTase=nil;
+        self.resumData=resumeData;
+    }];
 
 }
 
 //继续
 -(void)continueValue:(UIButton *)object{
+    if (self.resumData==nil) {
+        
+        NSLog(@"没有缓存的数据");
+        return;
+    }
 
     NSLog(@"continue");
+//使用续传数据启动下载任务(重新开启一个任务)
+    self.downlodTase=[self.session downloadTaskWithResumeData:self.resumData];
+//清空缓存的数据
+    self.resumData=nil;
+//所有任务都是默认挂起的
+    [self.downlodTase resume];
+    
+ 
 
 }
 
