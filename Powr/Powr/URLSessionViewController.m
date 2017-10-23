@@ -22,7 +22,11 @@
     if (_session==nil) {
         
         NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
+        /* 1. 代理的队列 如果给 nil 多线程执行
+         2. [NSOperationQueue mainQueue] 主队列*/
         _session = [NSURLSession sessionWithConfiguration:config delegate:self delegateQueue:nil];
+        
+        _session = [NSURLSession sessionWithConfiguration:config delegate:self delegateQueue:[NSOperationQueue mainQueue]];
         
     }
     
@@ -34,6 +38,17 @@
     self.view.backgroundColor = [UIColor whiteColor];
     [super viewDidLoad];
     [self createView];
+
+}
+
+
+//当退出控制器的时候需要下载任务也取消的时候调用
+-(void)viewWillDisappear:(BOOL)animated{
+    
+    //取消会话
+    [super viewWillDisappear:animated];
+    [self.session invalidateAndCancel];
+    self.session = nil;
 
 }
 
@@ -77,6 +92,11 @@
         
         NSURL *url=[NSURL URLWithString:@"http://117.41.172.5:81/epson/epsonbook/cb-1460ui-7.mp4"];
         //    [[self.session downloadTaskWithURL:url] resume];
+        /**
+        真正的网络访问
+        1.在网络开发中应该将所有的网络访问操作都封装到一个方法中，由统一的单例对象负责网络事件。
+        2.Session会对代理进行强引用，单利本身是一个静态实例，本身不需要释放
+         */
         self.downlodTase= [self.session downloadTaskWithURL:url];
         [self.downlodTase resume];
         
@@ -135,6 +155,7 @@
     NSURL *url=[NSURL URLWithString:@"http://117.41.172.5:81/epson/epsonbook/cb-1460ui-7.mp4"];
     
 //1、全局的session
+//2.如果用block回调，默认任务都在（异步的）子线程，更新UI要回到主线程
 //    [[[NSURLSession sharedSession]downloadTaskWithURL:url completionHandler:^(NSURL * _Nullable location, NSURLResponse * _Nullable response, NSError * _Nullable error) {
 //        
 //        NSLog(@"%@",location);
@@ -152,6 +173,9 @@
 //1.下载完成
 -(void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask didFinishDownloadingToURL:(NSURL *)location{
     NSLog(@"sucess==%@",location);
+//    下载完成的时时候释放(代理的是strong，所以要释放)
+    [self.session finishTasksAndInvalidate];
+    self.session=nil;
 
 }
 
