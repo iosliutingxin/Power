@@ -26,7 +26,7 @@
 -(void)initDataSource{
 
 
-    dataSource = @[@"json",@"xml",@"login",@"URLSession"];
+    dataSource = @[@"json",@"xml",@"login",@"URLSession",@"URLConnection"];
 }
 
 -(void)initUITableView{
@@ -98,8 +98,15 @@
         URLSessionViewController *xml = [[URLSessionViewController alloc]init];
         [self.navigationController pushViewController:xml animated:nil];
         
-
-    
+        
+        
+    }else if (indexPath.row==4){
+        
+        ConnectionViewController *xml = [[ConnectionViewController alloc]init];
+        [self.navigationController pushViewController:xml animated:nil];
+        
+        
+        
     }
     
     

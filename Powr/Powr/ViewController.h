@@ -11,6 +11,7 @@
 #import "jsonViewController.h"
 #import "loginViewController.h"
 #import "URLSessionViewController.h"
+#import "ConnectionViewController.h"
 @interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 
 @end

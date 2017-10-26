@@ -18,6 +18,7 @@
 		C9764A621F5C589C00C5B386 /* PowrUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9764A611F5C589C00C5B386 /* PowrUITests.m */; };
 		C97A6D2A1F63ED8300ECE8A2 /* jsonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C97A6D291F63ED8300ECE8A2 /* jsonViewController.m */; };
 		C97A6D2D1F63EDB000ECE8A2 /* xmlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C97A6D2C1F63EDB000ECE8A2 /* xmlViewController.m */; };
+		C9CCE6941FA219D5007862F2 /* ConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CCE6931FA219D5007862F2 /* ConnectionViewController.m */; };
 		C9D225A11F876FC700BEA7B9 /* loginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D225A01F876FC700BEA7B9 /* loginViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,8 @@
 		C97A6D291F63ED8300ECE8A2 /* jsonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jsonViewController.m; sourceTree = "<group>"; };
 		C97A6D2B1F63EDB000ECE8A2 /* xmlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xmlViewController.h; sourceTree = "<group>"; };
 		C97A6D2C1F63EDB000ECE8A2 /* xmlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xmlViewController.m; sourceTree = "<group>"; };
+		C9CCE6921FA219D5007862F2 /* ConnectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionViewController.h; sourceTree = "<group>"; };
+		C9CCE6931FA219D5007862F2 /* ConnectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionViewController.m; sourceTree = "<group>"; };
 		C9D2259F1F876FC700BEA7B9 /* loginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loginViewController.h; sourceTree = "<group>"; };
 		C9D225A01F876FC700BEA7B9 /* loginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,6 +125,7 @@
 		C9764A3B1F5C589B00C5B386 /* Powr */ = {
 			isa = PBXGroup;
 			children = (
+				C9CCE6911FA2197C007862F2 /* NSURLConnection */,
 				C928C65B1F8E65F5006A9D07 /* NSURLSession */,
 				C9D2259E1F876F8900BEA7B9 /* password */,
 				C97A6D211F63CFEE00ECE8A2 /* XML */,
@@ -173,6 +177,15 @@
 				C97A6D2C1F63EDB000ECE8A2 /* xmlViewController.m */,
 			);
 			name = XML;
+			sourceTree = "<group>";
+		};
+		C9CCE6911FA2197C007862F2 /* NSURLConnection */ = {
+			isa = PBXGroup;
+			children = (
+				C9CCE6921FA219D5007862F2 /* ConnectionViewController.h */,
+				C9CCE6931FA219D5007862F2 /* ConnectionViewController.m */,
+			);
+			name = NSURLConnection;
 			sourceTree = "<group>";
 		};
 		C9D2259E1F876F8900BEA7B9 /* password */ = {
@@ -319,6 +332,7 @@
 				C97A6D2A1F63ED8300ECE8A2 /* jsonViewController.m in Sources */,
 				C9764A441F5C589B00C5B386 /* ViewController.m in Sources */,
 				C97A6D2D1F63EDB000ECE8A2 /* xmlViewController.m in Sources */,
+				C9CCE6941FA219D5007862F2 /* ConnectionViewController.m in Sources */,
 				C9764A411F5C589B00C5B386 /* AppDelegate.m in Sources */,
 				C9D225A11F876FC700BEA7B9 /* loginViewController.m in Sources */,
 				C9764A3E1F5C589B00C5B386 /* main.m in Sources */,
