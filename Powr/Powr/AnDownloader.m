@@ -24,12 +24,37 @@
 @property(nonatomic,strong)NSOutputStream *fileStream;
 //下载任务的Runloop
 @property(assign,nonatomic)CFRunLoopRef downloadRunloop;
+
+//----block------
+@property(assign,nonatomic)void(^progressBlock)(float);
+@property(assign,nonatomic)void(^completionBlock)(NSString *);
+@property(assign,nonatomic)void(^failBlock)(NSString *);
 @end
 
 @implementation AnDownloader
 
--(void)downloadWithURL:(NSURL *)url{
-//0.保存URL
+/*
+ 
+ block可以在需要得时候执行
+ 
+ 技巧：
+ 1.如果本方法可以直接执行，就不需要定义属性纪录block
+ 2.如果不直接执行，就需要定义属性纪录block
+ 
+ 补充：
+ 再很多3方框架中，进度回调一般在异步执行
+   --因为进度回调会调用多次，在主线程中会影响主线程UI
+ 完成回调在主线程回调
+   一般调用方不需要关心线程间回调，一旦完成就直接更新UI就好
+ 
+ **/
+-(void)downloadWithURL:(NSURL *)url progress:(void (^)(float))progress completion:(void (^)(NSString *))completion failed:(void (^)(NSString *))failed{
+    
+    
+//0.保存属性
+    self.progressBlock = progress;
+    self.completionBlock = completion;
+    self.failBlock = failed;
     self.downloadURL =url;
     
 //1.看服务器上文件大小
@@ -38,6 +63,10 @@
 //2.看本地是否有文件
     if (![self checkLocalFileInfo]) {
         NSLog(@"下载完毕");
+        if (self.completionBlock) {
+            
+            self.completionBlock(self.filePath);
+        }
         return;
     }
 //3.开始从服务器下载数据
@@ -156,6 +185,12 @@
     
     float progress = (float)self.currentLenght / self.expectedContentLength;
     
+    if (self.progressBlock) {
+        
+        self.progressBlock(progress);
+
+    }
+    
     NSLog(@"进度===%f %@",progress,[NSThread currentThread]);
 
 }
@@ -163,14 +198,24 @@
 //3.所有任务下载完毕
 -(void)connectionDidFinishLoading:(NSURLConnection *)connection{
     
+    if (self.completionBlock) {
+//        在主线程回调
+        dispatch_async(dispatch_get_main_queue(), ^{self.completionBlock(self.filePath);});
+
+    }
     [self.fileStream close];
 //   停止运行循环
     CFRunLoopStop(self.downloadRunloop);
+    
 
 }
 
 -(void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error{
     
+    
+    if (self.failBlock) {
+        self.failBlock(error.localizedDescription);
+    }
     [self.fileStream close];
     NSLog(@"error === %@",error.debugDescription);
     //   停止运行循环

@@ -27,7 +27,15 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     
     AnDownloader *download=[[AnDownloader alloc]init];
-    [download downloadWithURL:[NSURL URLWithString:@"http://117.41.172.5:81/epson/epsonbook/cb-1460ui-7.mp4"]];
+    NSURL *url=[NSURL URLWithString:@"http://117.41.172.5:81/epson/epsonbook/cb-1460ui-7.mp4"];
+    [download downloadWithURL:url progress:^(float progress) {
+        NSLog(@"--progressblack--%f  线程 %@",progress,[NSThread currentThread]);
+    } completion:^(NSString *filePath) {
+        NSLog(@"--sucessBlock--%@ 线程==%@",filePath,[NSThread currentThread]);
+    } failed:^(NSString *error) {
+        NSLog(@"---failedBlock--%@",error);
+    }];
+    
     
     
 }
