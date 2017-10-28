@@ -19,6 +19,7 @@
 		C97A6D2A1F63ED8300ECE8A2 /* jsonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C97A6D291F63ED8300ECE8A2 /* jsonViewController.m */; };
 		C97A6D2D1F63EDB000ECE8A2 /* xmlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C97A6D2C1F63EDB000ECE8A2 /* xmlViewController.m */; };
 		C9CCE6941FA219D5007862F2 /* ConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CCE6931FA219D5007862F2 /* ConnectionViewController.m */; };
+		C9CCE6971FA22596007862F2 /* AnDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CCE6961FA22596007862F2 /* AnDownloader.m */; };
 		C9D225A11F876FC700BEA7B9 /* loginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D225A01F876FC700BEA7B9 /* loginViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,8 @@
 		C97A6D2C1F63EDB000ECE8A2 /* xmlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xmlViewController.m; sourceTree = "<group>"; };
 		C9CCE6921FA219D5007862F2 /* ConnectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionViewController.h; sourceTree = "<group>"; };
 		C9CCE6931FA219D5007862F2 /* ConnectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionViewController.m; sourceTree = "<group>"; };
+		C9CCE6951FA22596007862F2 /* AnDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnDownloader.h; sourceTree = "<group>"; };
+		C9CCE6961FA22596007862F2 /* AnDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnDownloader.m; sourceTree = "<group>"; };
 		C9D2259F1F876FC700BEA7B9 /* loginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loginViewController.h; sourceTree = "<group>"; };
 		C9D225A01F876FC700BEA7B9 /* loginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -184,6 +187,8 @@
 			children = (
 				C9CCE6921FA219D5007862F2 /* ConnectionViewController.h */,
 				C9CCE6931FA219D5007862F2 /* ConnectionViewController.m */,
+				C9CCE6951FA22596007862F2 /* AnDownloader.h */,
+				C9CCE6961FA22596007862F2 /* AnDownloader.m */,
 			);
 			name = NSURLConnection;
 			sourceTree = "<group>";
@@ -329,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C928C65E1F8E6631006A9D07 /* URLSessionViewController.m in Sources */,
+				C9CCE6971FA22596007862F2 /* AnDownloader.m in Sources */,
 				C97A6D2A1F63ED8300ECE8A2 /* jsonViewController.m in Sources */,
 				C9764A441F5C589B00C5B386 /* ViewController.m in Sources */,
 				C97A6D2D1F63EDB000ECE8A2 /* xmlViewController.m in Sources */,
