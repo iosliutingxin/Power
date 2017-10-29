@@ -23,4 +23,7 @@
             completion:(void(^)(NSString *filePath))completion
                  failed:(void(^)(NSString * error))failed;
 
+//暂停方法
+-(void)pause;
+
 @end

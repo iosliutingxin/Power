@@ -24,6 +24,7 @@
 @property(nonatomic,strong)NSOutputStream *fileStream;
 //下载任务的Runloop
 @property(assign,nonatomic)CFRunLoopRef downloadRunloop;
+@property(strong,nonatomic)NSURLConnection *downloadConnection;
 
 //----block------
 @property(assign,nonatomic)void(^progressBlock)(float);
@@ -76,6 +77,12 @@
     
 
 }
+
+-(void)pause{
+    
+    [self.downloadConnection cancel];
+
+}
 #pragma mark --下载文件
 //开始下载文件
 -(void)downloadFile{
@@ -93,10 +100,10 @@
     [request setValue:rangeStr forHTTPHeaderField:@"Range"];
     
 // 1.开始网络连接
-    NSURLConnection * conn=[NSURLConnection connectionWithRequest:request delegate:self];
+    self.downloadConnection=[NSURLConnection connectionWithRequest:request delegate:self];
     
 //    2.启动网络连接
-    [conn start];
+    [self.downloadConnection start];
         
 //3.开启运行循环
         self.downloadRunloop = CFRunLoopGetCurrent();
