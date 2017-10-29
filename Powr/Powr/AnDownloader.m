@@ -27,9 +27,9 @@
 @property(strong,nonatomic)NSURLConnection *downloadConnection;
 
 //----block------
-@property(assign,nonatomic)void(^progressBlock)(float);
-@property(assign,nonatomic)void(^completionBlock)(NSString *);
-@property(assign,nonatomic)void(^failBlock)(NSString *);
+@property(copy,nonatomic)void(^progressBlock)(float);
+@property(copy,nonatomic)void(^completionBlock)(NSString *);
+@property(copy,nonatomic)void(^failBlock)(NSString *);
 @end
 
 @implementation AnDownloader
@@ -205,12 +205,14 @@
 //3.所有任务下载完毕
 -(void)connectionDidFinishLoading:(NSURLConnection *)connection{
     
-    if (self.completionBlock) {
-//        在主线程回调
-        dispatch_async(dispatch_get_main_queue(), ^{self.completionBlock(self.filePath);});
 
-    }
     [self.fileStream close];
+    
+    if (self.completionBlock) {
+        //        在主线程回调
+        dispatch_async(dispatch_get_main_queue(), ^{self.completionBlock(self.filePath);});
+        
+    }
 //   停止运行循环
     CFRunLoopStop(self.downloadRunloop);
     
