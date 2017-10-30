@@ -13,7 +13,8 @@
 
 //下载缓冲池
 @property(strong,nonatomic)NSMutableDictionary *downloadCache;
-
+//下载错误
+@property(copy,nonatomic)void(^failBlock)(NSString *);
 @end
 
 @implementation AXDownloadManager
@@ -49,10 +50,12 @@
     return  instance;
 }
 
+//下载
 -(void)downloadWithURL:(NSURL *)url progress:(void(^)(float progress))progress
             completion:(void(^)(NSString *filePath))completion
                 failed:(void(^)(NSString * error))failed{
-    
+//0,纪录下载失败的回调
+    self.failBlock=failed;
     
 //1,判断缓冲池是否存在下载任务
       AnDownloader *downloader =self.downloadCache[url.path];
@@ -75,6 +78,35 @@
         }
 
     } failed:failed];
+
+}
+
+//暂停
+-(void)pauserWithUrl:(NSURL *)url{
+    
+//0.判断操作释放存在
+    
+//1.找出下载路径
+    AnDownloader *downloader =self.downloadCache[url.path];
+    
+    if (downloader == nil) {
+        if (self.failBlock) {
+            
+            self.failBlock(@"操作不存在");
+        }
+        
+        return;
+    }
+    
+//2.暂停下载
+    [downloader pause];
+    
+//3.删除下载路径
+    [self.downloadCache removeObjectForKey:url.path];
+
+    
+    
+
 
 }
 

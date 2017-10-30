@@ -14,4 +14,6 @@
 -(void)downloadWithURL:(NSURL *)url progress:(void(^)(float progress))progress
             completion:(void(^)(NSString *filePath))completion
                 failed:(void(^)(NSString * error))failed;
+
+-(void)pauserWithUrl:(NSURL *)url;
 @end

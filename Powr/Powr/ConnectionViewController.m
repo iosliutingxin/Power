@@ -10,6 +10,8 @@
 #import "AXDownloadManager.h"
 
 @interface ConnectionViewController ()
+
+@property(strong,nonatomic)NSURL *url;
 @end
 
 @implementation ConnectionViewController
@@ -93,8 +95,8 @@
     
     NSLog(@"begin");
     
-    NSURL *url=[NSURL URLWithString:@"http://117.41.172.5:81/epson/epsonbook/cb-1460ui-7.mp4"];
-    [[AXDownloadManager shareDownloadManager] downloadWithURL:url progress:^(float progress) {
+    self.url=[NSURL URLWithString:@"http://117.41.172.5:81/epson/epsonbook/cb-1460ui-7.mp4"];
+    [[AXDownloadManager shareDownloadManager] downloadWithURL:self.url progress:^(float progress) {
         NSLog(@"--progressblack--%f  线程 %@",progress,[NSThread currentThread]);
     } completion:^(NSString *filePath) {
         NSLog(@"--sucessBlock--%@ 线程==%@",filePath,[NSThread currentThread]);
@@ -110,6 +112,7 @@
     
     NSLog(@"pase");
 //    [self.downloader pause];
+    [[AXDownloadManager shareDownloadManager] pauserWithUrl:self.url];
     
 
     
