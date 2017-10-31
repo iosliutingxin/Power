@@ -12,6 +12,7 @@
 #import "loginViewController.h"
 #import "URLSessionViewController.h"
 #import "ConnectionViewController.h"
+#import "HttpsViewController.h"
 @interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 
 @end

@@ -77,7 +77,16 @@
             completion(filePath);
         }
 
-    } failed:failed];
+    } failed:^(NSString *error) {
+        //        1,从下载缓冲池中删除下载任务
+        [self.downloadCache removeObjectForKey:url.path];
+        //        2,执行调用方的block
+        if (failed) {
+            failed(error);
+        }
+        
+
+    }];
 
 }
 

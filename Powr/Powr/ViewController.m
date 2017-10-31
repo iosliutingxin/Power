@@ -26,7 +26,7 @@
 -(void)initDataSource{
 
 
-    dataSource = @[@"json",@"xml",@"login",@"URLSession",@"URLConnection"];
+    dataSource = @[@"json",@"xml",@"login",@"URLSession",@"URLConnection",@"https信任"];
 }
 
 -(void)initUITableView{
@@ -103,6 +103,13 @@
     }else if (indexPath.row==4){
         
         ConnectionViewController *xml = [[ConnectionViewController alloc]init];
+        [self.navigationController pushViewController:xml animated:nil];
+        
+        
+        
+       }else if (indexPath.row==5){
+        
+        HttpsViewController *xml = [[HttpsViewController alloc]init];
         [self.navigationController pushViewController:xml animated:nil];
         
         
