@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9012CA91FAF55E90020DAD9 /* uploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9012CA81FAF55E90020DAD9 /* uploadViewController.m */; };
 		C928C65E1F8E6631006A9D07 /* URLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C928C65D1F8E6631006A9D07 /* URLSessionViewController.m */; };
 		C9764A3E1F5C589B00C5B386 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9764A3D1F5C589B00C5B386 /* main.m */; };
 		C9764A411F5C589B00C5B386 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9764A401F5C589B00C5B386 /* AppDelegate.m */; };
@@ -43,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C9012CA71FAF55E90020DAD9 /* uploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uploadViewController.h; sourceTree = "<group>"; };
+		C9012CA81FAF55E90020DAD9 /* uploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = uploadViewController.m; sourceTree = "<group>"; };
 		C928C65C1F8E6631006A9D07 /* URLSessionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLSessionViewController.h; sourceTree = "<group>"; };
 		C928C65D1F8E6631006A9D07 /* URLSessionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLSessionViewController.m; sourceTree = "<group>"; };
 		C9764A391F5C589B00C5B386 /* Powr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Powr.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +105,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C9012CA61FAF55260020DAD9 /* WebDav */ = {
+			isa = PBXGroup;
+			children = (
+				C9012CA71FAF55E90020DAD9 /* uploadViewController.h */,
+				C9012CA81FAF55E90020DAD9 /* uploadViewController.m */,
+			);
+			name = WebDav;
+			sourceTree = "<group>";
+		};
 		C928C65B1F8E65F5006A9D07 /* NSURLSession */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +146,7 @@
 		C9764A3B1F5C589B00C5B386 /* Powr */ = {
 			isa = PBXGroup;
 			children = (
+				C9012CA61FAF55260020DAD9 /* WebDav */,
 				C9CCE69C1FA8B2D7007862F2 /* Https */,
 				C9CCE69B1FA8B2C9007862F2 /* New Group */,
 				C9CCE6911FA2197C007862F2 /* NSURLConnection */,
@@ -368,6 +381,7 @@
 				C9CCE6941FA219D5007862F2 /* ConnectionViewController.m in Sources */,
 				C9CCE69F1FA8B321007862F2 /* HttpsViewController.m in Sources */,
 				C9764A411F5C589B00C5B386 /* AppDelegate.m in Sources */,
+				C9012CA91FAF55E90020DAD9 /* uploadViewController.m in Sources */,
 				C9D225A11F876FC700BEA7B9 /* loginViewController.m in Sources */,
 				C9764A3E1F5C589B00C5B386 /* main.m in Sources */,
 			);

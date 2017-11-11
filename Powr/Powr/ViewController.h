@@ -13,6 +13,7 @@
 #import "URLSessionViewController.h"
 #import "ConnectionViewController.h"
 #import "HttpsViewController.h"
+#import "uploadViewController.h"
 @interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 
 @end
