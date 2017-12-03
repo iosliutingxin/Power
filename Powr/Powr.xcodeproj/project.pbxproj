@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		840A84DF1FD42F440008DF0C /* XmlBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840A84DE1FD42F440008DF0C /* XmlBaseViewController.m */; };
+		840A84E21FD4382D0008DF0C /* plistBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840A84E11FD4382D0008DF0C /* plistBaseViewController.m */; };
 		C9012CA91FAF55E90020DAD9 /* uploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9012CA81FAF55E90020DAD9 /* uploadViewController.m */; };
 		C928C65E1F8E6631006A9D07 /* URLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C928C65D1F8E6631006A9D07 /* URLSessionViewController.m */; };
 		C9764A3E1F5C589B00C5B386 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9764A3D1F5C589B00C5B386 /* main.m */; };
@@ -44,6 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		840A84DD1FD42F440008DF0C /* XmlBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XmlBaseViewController.h; sourceTree = "<group>"; };
+		840A84DE1FD42F440008DF0C /* XmlBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XmlBaseViewController.m; sourceTree = "<group>"; };
+		840A84E01FD4382D0008DF0C /* plistBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = plistBaseViewController.h; sourceTree = "<group>"; };
+		840A84E11FD4382D0008DF0C /* plistBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = plistBaseViewController.m; sourceTree = "<group>"; };
 		C9012CA71FAF55E90020DAD9 /* uploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uploadViewController.h; sourceTree = "<group>"; };
 		C9012CA81FAF55E90020DAD9 /* uploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = uploadViewController.m; sourceTree = "<group>"; };
 		C928C65C1F8E6631006A9D07 /* URLSessionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLSessionViewController.h; sourceTree = "<group>"; };
@@ -108,6 +114,10 @@
 		840A84DC1FD3FDBB0008DF0C /* DataBase */ = {
 			isa = PBXGroup;
 			children = (
+				840A84DD1FD42F440008DF0C /* XmlBaseViewController.h */,
+				840A84DE1FD42F440008DF0C /* XmlBaseViewController.m */,
+				840A84E01FD4382D0008DF0C /* plistBaseViewController.h */,
+				840A84E11FD4382D0008DF0C /* plistBaseViewController.m */,
 			);
 			name = DataBase;
 			sourceTree = "<group>";
@@ -386,8 +396,10 @@
 				C97A6D2A1F63ED8300ECE8A2 /* jsonViewController.m in Sources */,
 				C9764A441F5C589B00C5B386 /* ViewController.m in Sources */,
 				C97A6D2D1F63EDB000ECE8A2 /* xmlViewController.m in Sources */,
+				840A84E21FD4382D0008DF0C /* plistBaseViewController.m in Sources */,
 				C9CCE6941FA219D5007862F2 /* ConnectionViewController.m in Sources */,
 				C9CCE69F1FA8B321007862F2 /* HttpsViewController.m in Sources */,
+				840A84DF1FD42F440008DF0C /* XmlBaseViewController.m in Sources */,
 				C9764A411F5C589B00C5B386 /* AppDelegate.m in Sources */,
 				C9012CA91FAF55E90020DAD9 /* uploadViewController.m in Sources */,
 				C9D225A11F876FC700BEA7B9 /* loginViewController.m in Sources */,

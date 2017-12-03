@@ -26,7 +26,7 @@
 -(void)initDataSource{
 
 
-    dataSource = @[@"json",@"xml",@"login",@"URLSession",@"URLConnection",@"https信任",@"upload"];
+    dataSource = @[@"json",@"xml",@"login",@"URLSession",@"URLConnection",@"https信任",@"upload",@"xmlBase",@"plistBase"];
 }
 
 -(void)initUITableView{
@@ -117,6 +117,18 @@
        }else if (indexPath.row==6){
            
            uploadViewController *xml = [[uploadViewController alloc]init];
+           [self.navigationController pushViewController:xml animated:nil];
+           
+           
+           
+       }else if (indexPath.row==7){
+           
+           XmlBaseViewController *xml = [[XmlBaseViewController alloc]init];
+           [self.navigationController pushViewController:xml animated:nil];
+           
+       }else if (indexPath.row==8){
+           
+           plistBaseViewController *xml = [[plistBaseViewController alloc]init];
            [self.navigationController pushViewController:xml animated:nil];
            
            

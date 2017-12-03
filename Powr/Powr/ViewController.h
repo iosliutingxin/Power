@@ -14,6 +14,8 @@
 #import "ConnectionViewController.h"
 #import "HttpsViewController.h"
 #import "uploadViewController.h"
+#import "XmlBaseViewController.h"
+#import "plistBaseViewController.h"
 @interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 
 @end
