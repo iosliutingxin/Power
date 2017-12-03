@@ -26,7 +26,7 @@
 -(void)initDataSource{
 
 
-    dataSource = @[@"json",@"xml",@"login",@"URLSession",@"URLConnection",@"https信任",@"upload",@"xmlBase",@"plistBase"];
+    dataSource = @[@"json",@"xml",@"login",@"URLSession",@"URLConnection",@"https信任",@"upload",@"xmlBase",@"plistBase",@"arch"];
 }
 
 -(void)initUITableView{
@@ -129,6 +129,13 @@
        }else if (indexPath.row==8){
            
            plistBaseViewController *xml = [[plistBaseViewController alloc]init];
+           [self.navigationController pushViewController:xml animated:nil];
+           
+           
+           
+       }else if (indexPath.row==9){
+           
+           arichViewController *xml = [[arichViewController alloc]init];
            [self.navigationController pushViewController:xml animated:nil];
            
            

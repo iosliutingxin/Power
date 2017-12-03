@@ -60,7 +60,16 @@
     NSDictionary * dic = @{@"Key":@"value"};
     [dic writeToFile:filePath atomically:YES];
     
-    NSLog(@"%@",path);
+    
+//    偏好设置(苹果封装好的，不需要关心文件名)
+    NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:@"XanL" forKey:@"key"];
+    
+//    同步(在iOS8以前，偏好设置并不是立马保存，要调用同步方法)
+    [defaults synchronize];
+    
+    
+    [defaults objectForKey:@"key"];
    
     
 }

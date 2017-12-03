@@ -16,6 +16,7 @@
 #import "uploadViewController.h"
 #import "XmlBaseViewController.h"
 #import "plistBaseViewController.h"
+#import "arichViewController.h"
 @interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 
 @end
