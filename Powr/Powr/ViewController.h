@@ -17,6 +17,7 @@
 #import "XmlBaseViewController.h"
 #import "plistBaseViewController.h"
 #import "arichViewController.h"
+#import "NSRunLoopViewController.h"
 @interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 
 @end

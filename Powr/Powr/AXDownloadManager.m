@@ -58,8 +58,7 @@
     self.failBlock=failed;
     
 //1,判断缓冲池是否存在下载任务
-      AnDownloader *downloader =self.downloadCache[url.path];
-    if (downloader !=nil) {
+      AnDownloader *downloader =self.downloadCache[url.path];     if (downloader !=nil) {
         NSLog(@"任务已经存在!!!");
         return;
     }

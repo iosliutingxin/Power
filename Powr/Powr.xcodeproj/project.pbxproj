@@ -11,6 +11,8 @@
 		840A84E21FD4382D0008DF0C /* plistBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840A84E11FD4382D0008DF0C /* plistBaseViewController.m */; };
 		840A84E51FD4495D0008DF0C /* arichViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840A84E41FD4495D0008DF0C /* arichViewController.m */; };
 		840A84EB1FD44EE00008DF0C /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 840A84EA1FD44EE00008DF0C /* Teacher.m */; };
+		84AD4A791FDC192100A463CB /* NSRunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AD4A771FDC192100A463CB /* NSRunLoopViewController.m */; };
+		84AD4A7A1FDC192100A463CB /* NSRunLoopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84AD4A781FDC192100A463CB /* NSRunLoopViewController.xib */; };
 		C9012CA91FAF55E90020DAD9 /* uploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9012CA81FAF55E90020DAD9 /* uploadViewController.m */; };
 		C928C65E1F8E6631006A9D07 /* URLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C928C65D1F8E6631006A9D07 /* URLSessionViewController.m */; };
 		C9764A3E1F5C589B00C5B386 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9764A3D1F5C589B00C5B386 /* main.m */; };
@@ -56,6 +58,9 @@
 		840A84E41FD4495D0008DF0C /* arichViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = arichViewController.m; sourceTree = "<group>"; };
 		840A84E91FD44EE00008DF0C /* Teacher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
 		840A84EA1FD44EE00008DF0C /* Teacher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
+		84AD4A761FDC192100A463CB /* NSRunLoopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSRunLoopViewController.h; sourceTree = "<group>"; };
+		84AD4A771FDC192100A463CB /* NSRunLoopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSRunLoopViewController.m; sourceTree = "<group>"; };
+		84AD4A781FDC192100A463CB /* NSRunLoopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NSRunLoopViewController.xib; sourceTree = "<group>"; };
 		C9012CA71FAF55E90020DAD9 /* uploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uploadViewController.h; sourceTree = "<group>"; };
 		C9012CA81FAF55E90020DAD9 /* uploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = uploadViewController.m; sourceTree = "<group>"; };
 		C928C65C1F8E6631006A9D07 /* URLSessionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLSessionViewController.h; sourceTree = "<group>"; };
@@ -132,6 +137,16 @@
 			name = DataBase;
 			sourceTree = "<group>";
 		};
+		84AD4A751FDC18DD00A463CB /* NSRunLoop */ = {
+			isa = PBXGroup;
+			children = (
+				84AD4A761FDC192100A463CB /* NSRunLoopViewController.h */,
+				84AD4A771FDC192100A463CB /* NSRunLoopViewController.m */,
+				84AD4A781FDC192100A463CB /* NSRunLoopViewController.xib */,
+			);
+			name = NSRunLoop;
+			sourceTree = "<group>";
+		};
 		C9012CA61FAF55260020DAD9 /* WebDav */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +188,7 @@
 		C9764A3B1F5C589B00C5B386 /* Powr */ = {
 			isa = PBXGroup;
 			children = (
+				84AD4A751FDC18DD00A463CB /* NSRunLoop */,
 				840A84DC1FD3FDBB0008DF0C /* DataBase */,
 				C9012CA61FAF55260020DAD9 /* WebDav */,
 				C9CCE69C1FA8B2D7007862F2 /* Https */,
@@ -376,6 +392,7 @@
 				C9764A4C1F5C589C00C5B386 /* LaunchScreen.storyboard in Resources */,
 				C9764A491F5C589C00C5B386 /* Assets.xcassets in Resources */,
 				C9764A471F5C589C00C5B386 /* Main.storyboard in Resources */,
+				84AD4A7A1FDC192100A463CB /* NSRunLoopViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +418,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				840A84EB1FD44EE00008DF0C /* Teacher.m in Sources */,
+				84AD4A791FDC192100A463CB /* NSRunLoopViewController.m in Sources */,
 				C9CCE69A1FA61135007862F2 /* AXDownloadManager.m in Sources */,
 				C928C65E1F8E6631006A9D07 /* URLSessionViewController.m in Sources */,
 				C9CCE6971FA22596007862F2 /* AnDownloader.m in Sources */,
@@ -556,7 +574,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Powr/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.novagin.Powr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -569,7 +587,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Powr/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.novagin.Powr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
