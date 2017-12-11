@@ -11,6 +11,8 @@
 		840A84E21FD4382D0008DF0C /* plistBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840A84E11FD4382D0008DF0C /* plistBaseViewController.m */; };
 		840A84E51FD4495D0008DF0C /* arichViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840A84E41FD4495D0008DF0C /* arichViewController.m */; };
 		840A84EB1FD44EE00008DF0C /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 840A84EA1FD44EE00008DF0C /* Teacher.m */; };
+		8497B0321FDE6F87003F27DA /* NSURL+AXUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8497B0311FDE6F87003F27DA /* NSURL+AXUrl.m */; };
+		8497B0351FDE6FCA003F27DA /* RuntimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8497B0341FDE6FCA003F27DA /* RuntimerViewController.m */; };
 		84AD4A791FDC192100A463CB /* NSRunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AD4A771FDC192100A463CB /* NSRunLoopViewController.m */; };
 		84AD4A7A1FDC192100A463CB /* NSRunLoopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84AD4A781FDC192100A463CB /* NSRunLoopViewController.xib */; };
 		C9012CA91FAF55E90020DAD9 /* uploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9012CA81FAF55E90020DAD9 /* uploadViewController.m */; };
@@ -58,6 +60,10 @@
 		840A84E41FD4495D0008DF0C /* arichViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = arichViewController.m; sourceTree = "<group>"; };
 		840A84E91FD44EE00008DF0C /* Teacher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
 		840A84EA1FD44EE00008DF0C /* Teacher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
+		8497B0301FDE6F87003F27DA /* NSURL+AXUrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+AXUrl.h"; sourceTree = "<group>"; };
+		8497B0311FDE6F87003F27DA /* NSURL+AXUrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+AXUrl.m"; sourceTree = "<group>"; };
+		8497B0331FDE6FCA003F27DA /* RuntimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimerViewController.h; sourceTree = "<group>"; };
+		8497B0341FDE6FCA003F27DA /* RuntimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimerViewController.m; sourceTree = "<group>"; };
 		84AD4A761FDC192100A463CB /* NSRunLoopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSRunLoopViewController.h; sourceTree = "<group>"; };
 		84AD4A771FDC192100A463CB /* NSRunLoopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSRunLoopViewController.m; sourceTree = "<group>"; };
 		84AD4A781FDC192100A463CB /* NSRunLoopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NSRunLoopViewController.xib; sourceTree = "<group>"; };
@@ -140,6 +146,10 @@
 		8497B02F1FDE6E8D003F27DA /* Runtimer */ = {
 			isa = PBXGroup;
 			children = (
+				8497B0301FDE6F87003F27DA /* NSURL+AXUrl.h */,
+				8497B0311FDE6F87003F27DA /* NSURL+AXUrl.m */,
+				8497B0331FDE6FCA003F27DA /* RuntimerViewController.h */,
+				8497B0341FDE6FCA003F27DA /* RuntimerViewController.m */,
 			);
 			name = Runtimer;
 			sourceTree = "<group>";
@@ -425,6 +435,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8497B0351FDE6FCA003F27DA /* RuntimerViewController.m in Sources */,
 				840A84EB1FD44EE00008DF0C /* Teacher.m in Sources */,
 				84AD4A791FDC192100A463CB /* NSRunLoopViewController.m in Sources */,
 				C9CCE69A1FA61135007862F2 /* AXDownloadManager.m in Sources */,
@@ -438,6 +449,7 @@
 				C9CCE6941FA219D5007862F2 /* ConnectionViewController.m in Sources */,
 				C9CCE69F1FA8B321007862F2 /* HttpsViewController.m in Sources */,
 				840A84DF1FD42F440008DF0C /* XmlBaseViewController.m in Sources */,
+				8497B0321FDE6F87003F27DA /* NSURL+AXUrl.m in Sources */,
 				C9764A411F5C589B00C5B386 /* AppDelegate.m in Sources */,
 				C9012CA91FAF55E90020DAD9 /* uploadViewController.m in Sources */,
 				C9D225A11F876FC700BEA7B9 /* loginViewController.m in Sources */,
