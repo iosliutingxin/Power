@@ -26,7 +26,7 @@
 -(void)initDataSource{
 
 
-    dataSource = @[@"json",@"xml",@"login",@"URLSession",@"URLConnection",@"https信任",@"upload",@"xmlBase",@"plistBase",@"arch",@"RunLoop"];
+    dataSource = @[@"json",@"xml",@"login",@"URLSession",@"URLConnection",@"https信任",@"upload",@"xmlBase",@"plistBase",@"arch",@"RunLoop",@"Runtimer"];
 }
 
 -(void)initUITableView{
@@ -143,6 +143,13 @@
        }else if (indexPath.row==10){
            
           NSRunLoopViewController  *xml = [[NSRunLoopViewController alloc]init];
+           [self.navigationController pushViewController:xml animated:nil];
+           
+           
+           
+       }else if (indexPath.row==11){
+           
+           RuntimerViewController  *xml = [[RuntimerViewController alloc]init];
            [self.navigationController pushViewController:xml animated:nil];
            
            

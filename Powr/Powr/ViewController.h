@@ -18,6 +18,7 @@
 #import "plistBaseViewController.h"
 #import "arichViewController.h"
 #import "NSRunLoopViewController.h"
+#import "RuntimerViewController.h"
 @interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 
 @end
