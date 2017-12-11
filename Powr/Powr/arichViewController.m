@@ -51,7 +51,7 @@
     
     Teacher *teacher = [[Teacher alloc]init];
     teacher.name =@"names";
-    teacher.age = 19;
+    teacher.name1 = @"name1";
     
 //    获取路径
     NSString *temp = NSTemporaryDirectory();
@@ -74,7 +74,7 @@
     
     
     Teacher *teacher = [NSKeyedUnarchiver unarchiveObjectWithFile:file];
-    NSLog(@"%@",teacher.name);
+    NSLog(@"%@--%@",teacher.name,teacher.name1);
  
 }
 

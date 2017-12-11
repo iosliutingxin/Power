@@ -11,6 +11,6 @@
 @interface Teacher : NSObject<NSCopying>
 
 @property(nonatomic,copy)NSString *name;
-@property(nonatomic,assign)int *age;
+@property(nonatomic,copy)NSString *name1;
 
 @end
