@@ -15,6 +15,8 @@
 		8497B0351FDE6FCA003F27DA /* RuntimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8497B0341FDE6FCA003F27DA /* RuntimerViewController.m */; };
 		84AD4A791FDC192100A463CB /* NSRunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AD4A771FDC192100A463CB /* NSRunLoopViewController.m */; };
 		84AD4A7A1FDC192100A463CB /* NSRunLoopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84AD4A781FDC192100A463CB /* NSRunLoopViewController.xib */; };
+		84C2125F1FDF8A4C002274A5 /* workers.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2125E1FDF8A4C002274A5 /* workers.m */; };
+		84C212621FDF9AA4002274A5 /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C212611FDF9AA4002274A5 /* NotificationViewController.m */; };
 		C9012CA91FAF55E90020DAD9 /* uploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9012CA81FAF55E90020DAD9 /* uploadViewController.m */; };
 		C928C65E1F8E6631006A9D07 /* URLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C928C65D1F8E6631006A9D07 /* URLSessionViewController.m */; };
 		C9764A3E1F5C589B00C5B386 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9764A3D1F5C589B00C5B386 /* main.m */; };
@@ -67,6 +69,10 @@
 		84AD4A761FDC192100A463CB /* NSRunLoopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSRunLoopViewController.h; sourceTree = "<group>"; };
 		84AD4A771FDC192100A463CB /* NSRunLoopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSRunLoopViewController.m; sourceTree = "<group>"; };
 		84AD4A781FDC192100A463CB /* NSRunLoopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NSRunLoopViewController.xib; sourceTree = "<group>"; };
+		84C2125D1FDF8A4C002274A5 /* workers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = workers.h; sourceTree = "<group>"; };
+		84C2125E1FDF8A4C002274A5 /* workers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = workers.m; sourceTree = "<group>"; };
+		84C212601FDF9AA4002274A5 /* NotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
+		84C212611FDF9AA4002274A5 /* NotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
 		C9012CA71FAF55E90020DAD9 /* uploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uploadViewController.h; sourceTree = "<group>"; };
 		C9012CA81FAF55E90020DAD9 /* uploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = uploadViewController.m; sourceTree = "<group>"; };
 		C928C65C1F8E6631006A9D07 /* URLSessionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLSessionViewController.h; sourceTree = "<group>"; };
@@ -164,6 +170,17 @@
 			name = NSRunLoop;
 			sourceTree = "<group>";
 		};
+		84C2125C1FDF8A31002274A5 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				84C2125D1FDF8A4C002274A5 /* workers.h */,
+				84C2125E1FDF8A4C002274A5 /* workers.m */,
+				84C212601FDF9AA4002274A5 /* NotificationViewController.h */,
+				84C212611FDF9AA4002274A5 /* NotificationViewController.m */,
+			);
+			name = Notification;
+			sourceTree = "<group>";
+		};
 		C9012CA61FAF55260020DAD9 /* WebDav */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +222,7 @@
 		C9764A3B1F5C589B00C5B386 /* Powr */ = {
 			isa = PBXGroup;
 			children = (
+				84C2125C1FDF8A31002274A5 /* Notification */,
 				8497B02F1FDE6E8D003F27DA /* Runtimer */,
 				84AD4A751FDC18DD00A463CB /* NSRunLoop */,
 				840A84DC1FD3FDBB0008DF0C /* DataBase */,
@@ -436,6 +454,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8497B0351FDE6FCA003F27DA /* RuntimerViewController.m in Sources */,
+				84C2125F1FDF8A4C002274A5 /* workers.m in Sources */,
 				840A84EB1FD44EE00008DF0C /* Teacher.m in Sources */,
 				84AD4A791FDC192100A463CB /* NSRunLoopViewController.m in Sources */,
 				C9CCE69A1FA61135007862F2 /* AXDownloadManager.m in Sources */,
@@ -448,6 +467,7 @@
 				840A84E21FD4382D0008DF0C /* plistBaseViewController.m in Sources */,
 				C9CCE6941FA219D5007862F2 /* ConnectionViewController.m in Sources */,
 				C9CCE69F1FA8B321007862F2 /* HttpsViewController.m in Sources */,
+				84C212621FDF9AA4002274A5 /* NotificationViewController.m in Sources */,
 				840A84DF1FD42F440008DF0C /* XmlBaseViewController.m in Sources */,
 				8497B0321FDE6F87003F27DA /* NSURL+AXUrl.m in Sources */,
 				C9764A411F5C589B00C5B386 /* AppDelegate.m in Sources */,
