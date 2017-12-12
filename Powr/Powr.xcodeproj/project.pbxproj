@@ -17,6 +17,12 @@
 		84AD4A7A1FDC192100A463CB /* NSRunLoopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84AD4A781FDC192100A463CB /* NSRunLoopViewController.xib */; };
 		84C2125F1FDF8A4C002274A5 /* workers.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2125E1FDF8A4C002274A5 /* workers.m */; };
 		84C212621FDF9AA4002274A5 /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C212611FDF9AA4002274A5 /* NotificationViewController.m */; };
+		84C212661FDF9DAD002274A5 /* KVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C212651FDF9DAD002274A5 /* KVCViewController.m */; };
+		84C212691FDF9DD4002274A5 /* person.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C212681FDF9DD4002274A5 /* person.m */; };
+		84C2126D1FDFA1C9002274A5 /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2126C1FDFA1C9002274A5 /* KVOViewController.m */; };
+		84C212701FDFA68A002274A5 /* Persons.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2126F1FDFA68A002274A5 /* Persons.m */; };
+		84C212741FDFA957002274A5 /* BlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C212731FDFA957002274A5 /* BlockViewController.m */; };
+		84E632431FE0198600770BD2 /* BottomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E632421FE0198600770BD2 /* BottomViewController.m */; };
 		C9012CA91FAF55E90020DAD9 /* uploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9012CA81FAF55E90020DAD9 /* uploadViewController.m */; };
 		C928C65E1F8E6631006A9D07 /* URLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C928C65D1F8E6631006A9D07 /* URLSessionViewController.m */; };
 		C9764A3E1F5C589B00C5B386 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9764A3D1F5C589B00C5B386 /* main.m */; };
@@ -73,6 +79,18 @@
 		84C2125E1FDF8A4C002274A5 /* workers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = workers.m; sourceTree = "<group>"; };
 		84C212601FDF9AA4002274A5 /* NotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
 		84C212611FDF9AA4002274A5 /* NotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
+		84C212641FDF9DAD002274A5 /* KVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCViewController.h; sourceTree = "<group>"; };
+		84C212651FDF9DAD002274A5 /* KVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCViewController.m; sourceTree = "<group>"; };
+		84C212671FDF9DD4002274A5 /* person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = person.h; sourceTree = "<group>"; };
+		84C212681FDF9DD4002274A5 /* person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = person.m; sourceTree = "<group>"; };
+		84C2126B1FDFA1C9002274A5 /* KVOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOViewController.h; sourceTree = "<group>"; };
+		84C2126C1FDFA1C9002274A5 /* KVOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOViewController.m; sourceTree = "<group>"; };
+		84C2126E1FDFA68A002274A5 /* Persons.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Persons.h; sourceTree = "<group>"; };
+		84C2126F1FDFA68A002274A5 /* Persons.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Persons.m; sourceTree = "<group>"; };
+		84C212721FDFA957002274A5 /* BlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockViewController.h; sourceTree = "<group>"; };
+		84C212731FDFA957002274A5 /* BlockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockViewController.m; sourceTree = "<group>"; };
+		84E632411FE0198600770BD2 /* BottomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BottomViewController.h; sourceTree = "<group>"; };
+		84E632421FE0198600770BD2 /* BottomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BottomViewController.m; sourceTree = "<group>"; };
 		C9012CA71FAF55E90020DAD9 /* uploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uploadViewController.h; sourceTree = "<group>"; };
 		C9012CA81FAF55E90020DAD9 /* uploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = uploadViewController.m; sourceTree = "<group>"; };
 		C928C65C1F8E6631006A9D07 /* URLSessionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLSessionViewController.h; sourceTree = "<group>"; };
@@ -181,6 +199,46 @@
 			name = Notification;
 			sourceTree = "<group>";
 		};
+		84C212631FDF9D79002274A5 /* KVC */ = {
+			isa = PBXGroup;
+			children = (
+				84C212641FDF9DAD002274A5 /* KVCViewController.h */,
+				84C212651FDF9DAD002274A5 /* KVCViewController.m */,
+				84C212671FDF9DD4002274A5 /* person.h */,
+				84C212681FDF9DD4002274A5 /* person.m */,
+			);
+			name = KVC;
+			sourceTree = "<group>";
+		};
+		84C2126A1FDFA065002274A5 /* KVO */ = {
+			isa = PBXGroup;
+			children = (
+				84C2126B1FDFA1C9002274A5 /* KVOViewController.h */,
+				84C2126C1FDFA1C9002274A5 /* KVOViewController.m */,
+				84C2126E1FDFA68A002274A5 /* Persons.h */,
+				84C2126F1FDFA68A002274A5 /* Persons.m */,
+			);
+			name = KVO;
+			sourceTree = "<group>";
+		};
+		84C212711FDFA921002274A5 /* Block */ = {
+			isa = PBXGroup;
+			children = (
+				84C212721FDFA957002274A5 /* BlockViewController.h */,
+				84C212731FDFA957002274A5 /* BlockViewController.m */,
+			);
+			name = Block;
+			sourceTree = "<group>";
+		};
+		84E632401FE018AE00770BD2 /* 底部导航 */ = {
+			isa = PBXGroup;
+			children = (
+				84E632411FE0198600770BD2 /* BottomViewController.h */,
+				84E632421FE0198600770BD2 /* BottomViewController.m */,
+			);
+			name = "底部导航";
+			sourceTree = "<group>";
+		};
 		C9012CA61FAF55260020DAD9 /* WebDav */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +280,10 @@
 		C9764A3B1F5C589B00C5B386 /* Powr */ = {
 			isa = PBXGroup;
 			children = (
+				84E632401FE018AE00770BD2 /* 底部导航 */,
+				84C212711FDFA921002274A5 /* Block */,
+				84C2126A1FDFA065002274A5 /* KVO */,
+				84C212631FDF9D79002274A5 /* KVC */,
 				84C2125C1FDF8A31002274A5 /* Notification */,
 				8497B02F1FDE6E8D003F27DA /* Runtimer */,
 				84AD4A751FDC18DD00A463CB /* NSRunLoop */,
@@ -455,11 +517,16 @@
 			files = (
 				8497B0351FDE6FCA003F27DA /* RuntimerViewController.m in Sources */,
 				84C2125F1FDF8A4C002274A5 /* workers.m in Sources */,
+				84C212691FDF9DD4002274A5 /* person.m in Sources */,
 				840A84EB1FD44EE00008DF0C /* Teacher.m in Sources */,
+				84C212741FDFA957002274A5 /* BlockViewController.m in Sources */,
+				84C212661FDF9DAD002274A5 /* KVCViewController.m in Sources */,
+				84C2126D1FDFA1C9002274A5 /* KVOViewController.m in Sources */,
 				84AD4A791FDC192100A463CB /* NSRunLoopViewController.m in Sources */,
 				C9CCE69A1FA61135007862F2 /* AXDownloadManager.m in Sources */,
 				C928C65E1F8E6631006A9D07 /* URLSessionViewController.m in Sources */,
 				C9CCE6971FA22596007862F2 /* AnDownloader.m in Sources */,
+				84C212701FDFA68A002274A5 /* Persons.m in Sources */,
 				C97A6D2A1F63ED8300ECE8A2 /* jsonViewController.m in Sources */,
 				840A84E51FD4495D0008DF0C /* arichViewController.m in Sources */,
 				C9764A441F5C589B00C5B386 /* ViewController.m in Sources */,
@@ -470,6 +537,7 @@
 				84C212621FDF9AA4002274A5 /* NotificationViewController.m in Sources */,
 				840A84DF1FD42F440008DF0C /* XmlBaseViewController.m in Sources */,
 				8497B0321FDE6F87003F27DA /* NSURL+AXUrl.m in Sources */,
+				84E632431FE0198600770BD2 /* BottomViewController.m in Sources */,
 				C9764A411F5C589B00C5B386 /* AppDelegate.m in Sources */,
 				C9012CA91FAF55E90020DAD9 /* uploadViewController.m in Sources */,
 				C9D225A11F876FC700BEA7B9 /* loginViewController.m in Sources */,

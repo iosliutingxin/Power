@@ -26,7 +26,7 @@
 -(void)initDataSource{
 
 
-    dataSource = @[@"json",@"xml",@"login",@"URLSession",@"URLConnection",@"https信任",@"upload",@"xmlBase",@"plistBase",@"arch",@"RunLoop",@"Runtimer"];
+    dataSource = @[@"json",@"xml",@"login",@"URLSession",@"URLConnection",@"https信任",@"upload",@"xmlBase",@"plistBase",@"arch",@"RunLoop",@"Runtimer",@"KVO",@"BottomNavagation"];
 }
 
 -(void)initUITableView{
@@ -150,6 +150,20 @@
        }else if (indexPath.row==11){
            
            RuntimerViewController  *xml = [[RuntimerViewController alloc]init];
+           [self.navigationController pushViewController:xml animated:nil];
+           
+           
+           
+       }else if (indexPath.row==12){
+           
+           KVOViewController  *xml = [[KVOViewController alloc]init];
+           [self.navigationController pushViewController:xml animated:nil];
+           
+           
+           
+       }else if (indexPath.row==13){
+           
+           BottomViewController  *xml = [[BottomViewController alloc]init];
            [self.navigationController pushViewController:xml animated:nil];
            
            

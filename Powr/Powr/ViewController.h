@@ -19,6 +19,8 @@
 #import "arichViewController.h"
 #import "NSRunLoopViewController.h"
 #import "RuntimerViewController.h"
+#import "KVOViewController.h"
+#import "BottomViewController.h"
 @interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 
 @end
