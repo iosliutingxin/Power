@@ -21,6 +21,7 @@
 #import "RuntimerViewController.h"
 #import "KVOViewController.h"
 #import "BottomViewController.h"
+#import "PageViewController.h"
 @interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 
 @end

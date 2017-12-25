@@ -22,6 +22,9 @@
 		84C2126D1FDFA1C9002274A5 /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2126C1FDFA1C9002274A5 /* KVOViewController.m */; };
 		84C212701FDFA68A002274A5 /* Persons.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2126F1FDFA68A002274A5 /* Persons.m */; };
 		84C212741FDFA957002274A5 /* BlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C212731FDFA957002274A5 /* BlockViewController.m */; };
+		84C2DE741FEFF0D800570024 /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2DE731FEFF0D800570024 /* PageViewController.m */; };
+		84C2DE771FEFF0F300570024 /* pageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2DE761FEFF0F300570024 /* pageView.m */; };
+		84C2DE791FEFF24000570024 /* pageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C2DE781FEFF24000570024 /* pageView.xib */; };
 		84E632431FE0198600770BD2 /* BottomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E632421FE0198600770BD2 /* BottomViewController.m */; };
 		C9012CA91FAF55E90020DAD9 /* uploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9012CA81FAF55E90020DAD9 /* uploadViewController.m */; };
 		C928C65E1F8E6631006A9D07 /* URLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C928C65D1F8E6631006A9D07 /* URLSessionViewController.m */; };
@@ -89,6 +92,11 @@
 		84C2126F1FDFA68A002274A5 /* Persons.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Persons.m; sourceTree = "<group>"; };
 		84C212721FDFA957002274A5 /* BlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockViewController.h; sourceTree = "<group>"; };
 		84C212731FDFA957002274A5 /* BlockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockViewController.m; sourceTree = "<group>"; };
+		84C2DE721FEFF0D800570024 /* PageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
+		84C2DE731FEFF0D800570024 /* PageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
+		84C2DE751FEFF0F300570024 /* pageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pageView.h; sourceTree = "<group>"; };
+		84C2DE761FEFF0F300570024 /* pageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pageView.m; sourceTree = "<group>"; };
+		84C2DE781FEFF24000570024 /* pageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = pageView.xib; sourceTree = "<group>"; };
 		84E632411FE0198600770BD2 /* BottomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BottomViewController.h; sourceTree = "<group>"; };
 		84E632421FE0198600770BD2 /* BottomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BottomViewController.m; sourceTree = "<group>"; };
 		C9012CA71FAF55E90020DAD9 /* uploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uploadViewController.h; sourceTree = "<group>"; };
@@ -230,6 +238,18 @@
 			name = Block;
 			sourceTree = "<group>";
 		};
+		84C2DE711FEFF09600570024 /* PageView */ = {
+			isa = PBXGroup;
+			children = (
+				84C2DE721FEFF0D800570024 /* PageViewController.h */,
+				84C2DE731FEFF0D800570024 /* PageViewController.m */,
+				84C2DE751FEFF0F300570024 /* pageView.h */,
+				84C2DE761FEFF0F300570024 /* pageView.m */,
+				84C2DE781FEFF24000570024 /* pageView.xib */,
+			);
+			name = PageView;
+			sourceTree = "<group>";
+		};
 		84E632401FE018AE00770BD2 /* 底部导航 */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,6 +300,7 @@
 		C9764A3B1F5C589B00C5B386 /* Powr */ = {
 			isa = PBXGroup;
 			children = (
+				84C2DE711FEFF09600570024 /* PageView */,
 				84E632401FE018AE00770BD2 /* 底部导航 */,
 				84C212711FDFA921002274A5 /* Block */,
 				84C2126A1FDFA065002274A5 /* KVO */,
@@ -487,6 +508,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C2DE791FEFF24000570024 /* pageView.xib in Resources */,
 				C9764A4C1F5C589C00C5B386 /* LaunchScreen.storyboard in Resources */,
 				C9764A491F5C589C00C5B386 /* Assets.xcassets in Resources */,
 				C9764A471F5C589C00C5B386 /* Main.storyboard in Resources */,
@@ -522,6 +544,7 @@
 				84C212741FDFA957002274A5 /* BlockViewController.m in Sources */,
 				84C212661FDF9DAD002274A5 /* KVCViewController.m in Sources */,
 				84C2126D1FDFA1C9002274A5 /* KVOViewController.m in Sources */,
+				84C2DE771FEFF0F300570024 /* pageView.m in Sources */,
 				84AD4A791FDC192100A463CB /* NSRunLoopViewController.m in Sources */,
 				C9CCE69A1FA61135007862F2 /* AXDownloadManager.m in Sources */,
 				C928C65E1F8E6631006A9D07 /* URLSessionViewController.m in Sources */,
@@ -542,6 +565,7 @@
 				C9012CA91FAF55E90020DAD9 /* uploadViewController.m in Sources */,
 				C9D225A11F876FC700BEA7B9 /* loginViewController.m in Sources */,
 				C9764A3E1F5C589B00C5B386 /* main.m in Sources */,
+				84C2DE741FEFF0D800570024 /* PageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

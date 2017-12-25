@@ -26,7 +26,7 @@
 -(void)initDataSource{
 
 
-    dataSource = @[@"json",@"xml",@"login",@"URLSession",@"URLConnection",@"https信任",@"upload",@"xmlBase",@"plistBase",@"arch",@"RunLoop",@"Runtimer",@"KVO",@"BottomNavagation"];
+    dataSource = @[@"json",@"xml",@"login",@"URLSession",@"URLConnection",@"https信任",@"upload",@"xmlBase",@"plistBase",@"arch",@"RunLoop",@"Runtimer",@"KVO",@"BottomNavagation",@"pageView"];
 }
 
 -(void)initUITableView{
@@ -164,6 +164,13 @@
        }else if (indexPath.row==13){
            
            BottomViewController  *xml = [[BottomViewController alloc]init];
+           [self.navigationController pushViewController:xml animated:nil];
+           
+           
+           
+       }else if (indexPath.row==14){
+           
+           PageViewController  *xml = [[PageViewController alloc]init];
            [self.navigationController pushViewController:xml animated:nil];
            
            
