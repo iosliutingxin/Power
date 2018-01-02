@@ -23,6 +23,7 @@
     pagView.imageNames = @[@"004",@"002",@"003"];
     pagView.currentColor = [UIColor redColor];
     pagView.otherColor = [UIColor blackColor];
+    pagView.time = 2.50f;
     [self.view addSubview:pagView];
 }
 

@@ -11,6 +11,11 @@
 		840A84E21FD4382D0008DF0C /* plistBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840A84E11FD4382D0008DF0C /* plistBaseViewController.m */; };
 		840A84E51FD4495D0008DF0C /* arichViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840A84E41FD4495D0008DF0C /* arichViewController.m */; };
 		840A84EB1FD44EE00008DF0C /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 840A84EA1FD44EE00008DF0C /* Teacher.m */; };
+		843E499E1FFB6021001C5FFF /* AXFoodInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 843E499D1FFB6021001C5FFF /* AXFoodInfo.m */; };
+		843E49A11FFB6648001C5FFF /* AXFoodInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 843E49A01FFB6648001C5FFF /* AXFoodInfoVC.m */; };
+		843E49AB1FFB76DB001C5FFF /* foodsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 843E49A91FFB76DB001C5FFF /* foodsCell.m */; };
+		843E49AC1FFB76DB001C5FFF /* foodsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843E49AA1FFB76DB001C5FFF /* foodsCell.xib */; };
+		843E49AF1FFB7841001C5FFF /* foodsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843E49AE1FFB7841001C5FFF /* foodsTableViewController.m */; };
 		8497B0321FDE6F87003F27DA /* NSURL+AXUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8497B0311FDE6F87003F27DA /* NSURL+AXUrl.m */; };
 		8497B0351FDE6FCA003F27DA /* RuntimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8497B0341FDE6FCA003F27DA /* RuntimerViewController.m */; };
 		84AD4A791FDC192100A463CB /* NSRunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AD4A771FDC192100A463CB /* NSRunLoopViewController.m */; };
@@ -71,6 +76,15 @@
 		840A84E41FD4495D0008DF0C /* arichViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = arichViewController.m; sourceTree = "<group>"; };
 		840A84E91FD44EE00008DF0C /* Teacher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
 		840A84EA1FD44EE00008DF0C /* Teacher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
+		843E499C1FFB6021001C5FFF /* AXFoodInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AXFoodInfo.h; sourceTree = "<group>"; };
+		843E499D1FFB6021001C5FFF /* AXFoodInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AXFoodInfo.m; sourceTree = "<group>"; };
+		843E499F1FFB6648001C5FFF /* AXFoodInfoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AXFoodInfoVC.h; sourceTree = "<group>"; };
+		843E49A01FFB6648001C5FFF /* AXFoodInfoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AXFoodInfoVC.m; sourceTree = "<group>"; };
+		843E49A81FFB76DB001C5FFF /* foodsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = foodsCell.h; sourceTree = "<group>"; };
+		843E49A91FFB76DB001C5FFF /* foodsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = foodsCell.m; sourceTree = "<group>"; };
+		843E49AA1FFB76DB001C5FFF /* foodsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = foodsCell.xib; sourceTree = "<group>"; };
+		843E49AD1FFB7841001C5FFF /* foodsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = foodsTableViewController.h; sourceTree = "<group>"; };
+		843E49AE1FFB7841001C5FFF /* foodsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = foodsTableViewController.m; sourceTree = "<group>"; };
 		8497B0301FDE6F87003F27DA /* NSURL+AXUrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+AXUrl.h"; sourceTree = "<group>"; };
 		8497B0311FDE6F87003F27DA /* NSURL+AXUrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+AXUrl.m"; sourceTree = "<group>"; };
 		8497B0331FDE6FCA003F27DA /* RuntimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimerViewController.h; sourceTree = "<group>"; };
@@ -173,6 +187,38 @@
 				840A84EA1FD44EE00008DF0C /* Teacher.m */,
 			);
 			name = DataBase;
+			sourceTree = "<group>";
+		};
+		843E499A1FFB5FAD001C5FFF /* 模型 */ = {
+			isa = PBXGroup;
+			children = (
+				843E49A21FFB747F001C5FFF /* 自定义Cell */,
+				843E499B1FFB5FBD001C5FFF /* 商品 */,
+			);
+			name = "模型";
+			sourceTree = "<group>";
+		};
+		843E499B1FFB5FBD001C5FFF /* 商品 */ = {
+			isa = PBXGroup;
+			children = (
+				843E499C1FFB6021001C5FFF /* AXFoodInfo.h */,
+				843E499D1FFB6021001C5FFF /* AXFoodInfo.m */,
+				843E499F1FFB6648001C5FFF /* AXFoodInfoVC.h */,
+				843E49A01FFB6648001C5FFF /* AXFoodInfoVC.m */,
+			);
+			name = "商品";
+			sourceTree = "<group>";
+		};
+		843E49A21FFB747F001C5FFF /* 自定义Cell */ = {
+			isa = PBXGroup;
+			children = (
+				843E49A81FFB76DB001C5FFF /* foodsCell.h */,
+				843E49A91FFB76DB001C5FFF /* foodsCell.m */,
+				843E49AA1FFB76DB001C5FFF /* foodsCell.xib */,
+				843E49AD1FFB7841001C5FFF /* foodsTableViewController.h */,
+				843E49AE1FFB7841001C5FFF /* foodsTableViewController.m */,
+			);
+			name = "自定义Cell";
 			sourceTree = "<group>";
 		};
 		8497B02F1FDE6E8D003F27DA /* Runtimer */ = {
@@ -300,6 +346,7 @@
 		C9764A3B1F5C589B00C5B386 /* Powr */ = {
 			isa = PBXGroup;
 			children = (
+				843E499A1FFB5FAD001C5FFF /* 模型 */,
 				84C2DE711FEFF09600570024 /* PageView */,
 				84E632401FE018AE00770BD2 /* 底部导航 */,
 				84C212711FDFA921002274A5 /* Block */,
@@ -513,6 +560,7 @@
 				C9764A491F5C589C00C5B386 /* Assets.xcassets in Resources */,
 				C9764A471F5C589C00C5B386 /* Main.storyboard in Resources */,
 				84AD4A7A1FDC192100A463CB /* NSRunLoopViewController.xib in Resources */,
+				843E49AC1FFB76DB001C5FFF /* foodsCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,6 +586,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8497B0351FDE6FCA003F27DA /* RuntimerViewController.m in Sources */,
+				843E49AB1FFB76DB001C5FFF /* foodsCell.m in Sources */,
 				84C2125F1FDF8A4C002274A5 /* workers.m in Sources */,
 				84C212691FDF9DD4002274A5 /* person.m in Sources */,
 				840A84EB1FD44EE00008DF0C /* Teacher.m in Sources */,
@@ -549,8 +598,11 @@
 				C9CCE69A1FA61135007862F2 /* AXDownloadManager.m in Sources */,
 				C928C65E1F8E6631006A9D07 /* URLSessionViewController.m in Sources */,
 				C9CCE6971FA22596007862F2 /* AnDownloader.m in Sources */,
+				843E49A11FFB6648001C5FFF /* AXFoodInfoVC.m in Sources */,
 				84C212701FDFA68A002274A5 /* Persons.m in Sources */,
+				843E49AF1FFB7841001C5FFF /* foodsTableViewController.m in Sources */,
 				C97A6D2A1F63ED8300ECE8A2 /* jsonViewController.m in Sources */,
+				843E499E1FFB6021001C5FFF /* AXFoodInfo.m in Sources */,
 				840A84E51FD4495D0008DF0C /* arichViewController.m in Sources */,
 				C9764A441F5C589B00C5B386 /* ViewController.m in Sources */,
 				C97A6D2D1F63EDB000ECE8A2 /* xmlViewController.m in Sources */,

@@ -12,6 +12,7 @@
 @property(nonatomic,strong)NSArray *imageNames;  /**图片数据*/
 @property(nonatomic,strong)UIColor *currentColor;  /**选中颜色*/
 @property(nonatomic,strong)UIColor *otherColor;  /**默认颜色*/
+@property(nonatomic)double time;/**滚动时间间隔*/
 +(instancetype)pageView;
 
 @end
