@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		514B82E2204E90E5008F2733 /* foodsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 514B82E0204E90E5008F2733 /* foodsCell.m */; };
+		514B82E3204E90E5008F2733 /* foodsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 514B82E1204E90E5008F2733 /* foodsCell.xib */; };
+		517611B82091C6B20061F9A4 /* WDLeftView.m in Sources */ = {isa = PBXBuildFile; fileRef = 517611B12091C6B20061F9A4 /* WDLeftView.m */; };
+		517611B92091C6B20061F9A4 /* sidebar_bg@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 517611B52091C6B20061F9A4 /* sidebar_bg@2x.jpg */; };
+		517611BA2091C6B20061F9A4 /* sideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 517611B62091C6B20061F9A4 /* sideViewController.m */; };
+		517611BB2091C6B20061F9A4 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 517611B72091C6B20061F9A4 /* MainViewController.m */; };
 		840A84DF1FD42F440008DF0C /* XmlBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840A84DE1FD42F440008DF0C /* XmlBaseViewController.m */; };
 		840A84E21FD4382D0008DF0C /* plistBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840A84E11FD4382D0008DF0C /* plistBaseViewController.m */; };
 		840A84E51FD4495D0008DF0C /* arichViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840A84E41FD4495D0008DF0C /* arichViewController.m */; };
 		840A84EB1FD44EE00008DF0C /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 840A84EA1FD44EE00008DF0C /* Teacher.m */; };
 		843E499E1FFB6021001C5FFF /* AXFoodInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 843E499D1FFB6021001C5FFF /* AXFoodInfo.m */; };
 		843E49A11FFB6648001C5FFF /* AXFoodInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 843E49A01FFB6648001C5FFF /* AXFoodInfoVC.m */; };
-		843E49AB1FFB76DB001C5FFF /* foodsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 843E49A91FFB76DB001C5FFF /* foodsCell.m */; };
-		843E49AC1FFB76DB001C5FFF /* foodsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843E49AA1FFB76DB001C5FFF /* foodsCell.xib */; };
 		843E49AF1FFB7841001C5FFF /* foodsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843E49AE1FFB7841001C5FFF /* foodsTableViewController.m */; };
 		8497B0321FDE6F87003F27DA /* NSURL+AXUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8497B0311FDE6F87003F27DA /* NSURL+AXUrl.m */; };
 		8497B0351FDE6FCA003F27DA /* RuntimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8497B0341FDE6FCA003F27DA /* RuntimerViewController.m */; };
@@ -68,6 +72,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		514B82DF204E90E5008F2733 /* foodsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = foodsCell.h; sourceTree = "<group>"; };
+		514B82E0204E90E5008F2733 /* foodsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = foodsCell.m; sourceTree = "<group>"; };
+		514B82E1204E90E5008F2733 /* foodsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = foodsCell.xib; sourceTree = "<group>"; };
+		517611B12091C6B20061F9A4 /* WDLeftView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDLeftView.m; sourceTree = "<group>"; };
+		517611B22091C6B20061F9A4 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		517611B32091C6B20061F9A4 /* sideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sideViewController.h; sourceTree = "<group>"; };
+		517611B42091C6B20061F9A4 /* WDLeftView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDLeftView.h; sourceTree = "<group>"; };
+		517611B52091C6B20061F9A4 /* sidebar_bg@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sidebar_bg@2x.jpg"; sourceTree = "<group>"; };
+		517611B62091C6B20061F9A4 /* sideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sideViewController.m; sourceTree = "<group>"; };
+		517611B72091C6B20061F9A4 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		840A84DD1FD42F440008DF0C /* XmlBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XmlBaseViewController.h; sourceTree = "<group>"; };
 		840A84DE1FD42F440008DF0C /* XmlBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XmlBaseViewController.m; sourceTree = "<group>"; };
 		840A84E01FD4382D0008DF0C /* plistBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = plistBaseViewController.h; sourceTree = "<group>"; };
@@ -80,9 +94,6 @@
 		843E499D1FFB6021001C5FFF /* AXFoodInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AXFoodInfo.m; sourceTree = "<group>"; };
 		843E499F1FFB6648001C5FFF /* AXFoodInfoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AXFoodInfoVC.h; sourceTree = "<group>"; };
 		843E49A01FFB6648001C5FFF /* AXFoodInfoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AXFoodInfoVC.m; sourceTree = "<group>"; };
-		843E49A81FFB76DB001C5FFF /* foodsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = foodsCell.h; sourceTree = "<group>"; };
-		843E49A91FFB76DB001C5FFF /* foodsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = foodsCell.m; sourceTree = "<group>"; };
-		843E49AA1FFB76DB001C5FFF /* foodsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = foodsCell.xib; sourceTree = "<group>"; };
 		843E49AD1FFB7841001C5FFF /* foodsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = foodsTableViewController.h; sourceTree = "<group>"; };
 		843E49AE1FFB7841001C5FFF /* foodsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = foodsTableViewController.m; sourceTree = "<group>"; };
 		8497B0301FDE6F87003F27DA /* NSURL+AXUrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+AXUrl.h"; sourceTree = "<group>"; };
@@ -174,6 +185,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		517611B02091C69D0061F9A4 /* sideBarTool */ = {
+			isa = PBXGroup;
+			children = (
+				517611B22091C6B20061F9A4 /* MainViewController.h */,
+				517611B72091C6B20061F9A4 /* MainViewController.m */,
+				517611B52091C6B20061F9A4 /* sidebar_bg@2x.jpg */,
+				517611B32091C6B20061F9A4 /* sideViewController.h */,
+				517611B62091C6B20061F9A4 /* sideViewController.m */,
+				517611B42091C6B20061F9A4 /* WDLeftView.h */,
+				517611B12091C6B20061F9A4 /* WDLeftView.m */,
+			);
+			name = sideBarTool;
+			sourceTree = "<group>";
+		};
 		840A84DC1FD3FDBB0008DF0C /* DataBase */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,11 +237,11 @@
 		843E49A21FFB747F001C5FFF /* 自定义Cell */ = {
 			isa = PBXGroup;
 			children = (
-				843E49A81FFB76DB001C5FFF /* foodsCell.h */,
-				843E49A91FFB76DB001C5FFF /* foodsCell.m */,
-				843E49AA1FFB76DB001C5FFF /* foodsCell.xib */,
 				843E49AD1FFB7841001C5FFF /* foodsTableViewController.h */,
 				843E49AE1FFB7841001C5FFF /* foodsTableViewController.m */,
+				514B82DF204E90E5008F2733 /* foodsCell.h */,
+				514B82E0204E90E5008F2733 /* foodsCell.m */,
+				514B82E1204E90E5008F2733 /* foodsCell.xib */,
 			);
 			name = "自定义Cell";
 			sourceTree = "<group>";
@@ -346,6 +371,7 @@
 		C9764A3B1F5C589B00C5B386 /* Powr */ = {
 			isa = PBXGroup;
 			children = (
+				517611B02091C69D0061F9A4 /* sideBarTool */,
 				843E499A1FFB5FAD001C5FFF /* 模型 */,
 				84C2DE711FEFF09600570024 /* PageView */,
 				84E632401FE018AE00770BD2 /* 底部导航 */,
@@ -557,10 +583,11 @@
 			files = (
 				84C2DE791FEFF24000570024 /* pageView.xib in Resources */,
 				C9764A4C1F5C589C00C5B386 /* LaunchScreen.storyboard in Resources */,
+				517611B92091C6B20061F9A4 /* sidebar_bg@2x.jpg in Resources */,
 				C9764A491F5C589C00C5B386 /* Assets.xcassets in Resources */,
 				C9764A471F5C589C00C5B386 /* Main.storyboard in Resources */,
 				84AD4A7A1FDC192100A463CB /* NSRunLoopViewController.xib in Resources */,
-				843E49AC1FFB76DB001C5FFF /* foodsCell.xib in Resources */,
+				514B82E3204E90E5008F2733 /* foodsCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,16 +613,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				8497B0351FDE6FCA003F27DA /* RuntimerViewController.m in Sources */,
-				843E49AB1FFB76DB001C5FFF /* foodsCell.m in Sources */,
 				84C2125F1FDF8A4C002274A5 /* workers.m in Sources */,
 				84C212691FDF9DD4002274A5 /* person.m in Sources */,
 				840A84EB1FD44EE00008DF0C /* Teacher.m in Sources */,
+				517611B82091C6B20061F9A4 /* WDLeftView.m in Sources */,
 				84C212741FDFA957002274A5 /* BlockViewController.m in Sources */,
 				84C212661FDF9DAD002274A5 /* KVCViewController.m in Sources */,
 				84C2126D1FDFA1C9002274A5 /* KVOViewController.m in Sources */,
 				84C2DE771FEFF0F300570024 /* pageView.m in Sources */,
 				84AD4A791FDC192100A463CB /* NSRunLoopViewController.m in Sources */,
 				C9CCE69A1FA61135007862F2 /* AXDownloadManager.m in Sources */,
+				514B82E2204E90E5008F2733 /* foodsCell.m in Sources */,
 				C928C65E1F8E6631006A9D07 /* URLSessionViewController.m in Sources */,
 				C9CCE6971FA22596007862F2 /* AnDownloader.m in Sources */,
 				843E49A11FFB6648001C5FFF /* AXFoodInfoVC.m in Sources */,
@@ -614,6 +642,8 @@
 				8497B0321FDE6F87003F27DA /* NSURL+AXUrl.m in Sources */,
 				84E632431FE0198600770BD2 /* BottomViewController.m in Sources */,
 				C9764A411F5C589B00C5B386 /* AppDelegate.m in Sources */,
+				517611BA2091C6B20061F9A4 /* sideViewController.m in Sources */,
+				517611BB2091C6B20061F9A4 /* MainViewController.m in Sources */,
 				C9012CA91FAF55E90020DAD9 /* uploadViewController.m in Sources */,
 				C9D225A11F876FC700BEA7B9 /* loginViewController.m in Sources */,
 				C9764A3E1F5C589B00C5B386 /* main.m in Sources */,

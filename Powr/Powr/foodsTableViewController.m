@@ -61,7 +61,7 @@
     // 取出对应模型(模式需要加载数据，这里没有做数据加载，使用的时候注意)
     AXFoodInfo *mode ;
     //把模型的值传给cell
-    cell.mode = mode;
+//    cell.mode = mode;
     
     return cell;
 }
